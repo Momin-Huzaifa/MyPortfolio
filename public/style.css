@@ -1,0 +1,859 @@
+/* ================== GOOGLE FONTS LINK ==================  */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+/* ================== BASE ==================  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    background-color: var(--body-color2);
+}
+
+h1,
+h2,
+h3 {
+    /* color: var(--title-color); */
+    font-family: var(--title-font);
+    font-weight: var(--font-medium);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dark_mode {
+    background-color: var(--modedark-body-color);
+    color: var(--modelight-body-color);
+}
+
+/* ================== VARIABLES CSS ==================  */
+
+:root {
+    --header-height: 56px;
+
+    /* ================== COLORS==================  */
+    --modedark-body-color: #111;
+    --modelight-body-color: white;
+    --first-color: hsl(207, 65%, 65%);
+    --title-color: hsl(207, 4%, 16%);
+
+    --text-color: hsl(207, 4%, 28%);
+    --text-color-light: hsl(207, 4%, 56%);
+    --body-color: hsl(207, 4%, 99%);
+    --body-color2: #e5ecfb;
+
+    --container-color: hsl(207, 4%, 95%);
+
+    --gradient-color: linear-gradient(180deg,
+            hsla(207, 48%, 72%, 0),
+            hsla(207, 65%, 65%, 1));
+
+    --gradient-color2: linear-gradient(180deg,
+            hsla(203, 90%, 27%, 4),
+            hsla(198, 114%, 40%, 4));
+
+    /* ================== FONT AND TYPOGRAPHY ==================  */
+    --body-font: "Roboto", sans-serif;
+    --title-font: "Lora", serif;
+    --bigger-font-size: 24px;
+    --h1-font-size: 24px;
+    --h2-font-size: 20px;
+    --h3-font-size: 16px;
+    --normal-font-size: 15px;
+    --small-font-size: 13px;
+    --smaller-font-size: 12px;
+    --tiny-font-size: 10px;
+
+    /* ================== FONT WEIGHT ==================  */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* ================== Z-INDEX ==================  */
+
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+small {
+    color: red;
+    font-size: 12px;
+    display: block;
+}
+
+.navbar-section {
+    background-color: white;
+    box-shadow: 0px 15px 10px -15px #111;
+}
+
+.navbar-section .navbar .navbar-nav .nav-item {
+    margin-left: 30px;
+}
+
+.nav-button button {
+    background: var(--gradient-color2);
+    border: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    box-shadow: 0px 15px 10px -15px #111;
+    background: #faf8f9;
+}
+
+/* ================== Hero section ================== */
+
+.Hero-section {
+    padding-top: 70px;
+}
+
+.details {
+    border-bottom: 2px solid var(--text-color-light);
+    padding-top: 13px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.Mainimage {
+    width: 300px;
+}
+
+.Mainimage img {
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+    background: var(--gradient-color);
+    border-radius: 10px;
+}
+
+.InnerMainimage {
+    padding: 10px;
+    border: 2px solid var(--text-color-light);
+    border-radius: 10px;
+}
+
+.Boigraphy h3 {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+    color: var(--text-color-light);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.Boigraphy p {
+    font-family: var(--title-font);
+    margin-bottom: 40px;
+}
+
+.Mainimageicon {
+    margin-top: 15px;
+}
+
+.Mainimageicon a {
+    color: black;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+.Mainimageicon2 a {
+    color: white;
+}
+
+.Experience .Boigraphy {
+    text-align: end;
+}
+
+.Experience .Boigraphy p {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.allmain {
+    position: relative;
+}
+
+.Wawes,
+.Circle {
+    position: absolute;
+    opacity: 0.3;
+}
+
+.Wawes {
+    width: 100px;
+    left: 30px;
+    top: 80px;
+}
+
+.Circle {
+    width: 150px;
+    bottom: 85px;
+    right: 20px;
+    transform: rotate(15deg);
+}
+
+.Resumebtn a {
+    background: var(--gradient-color2);
+    border: none;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+}
+
+.Resumebtn a i {
+    font-size: 12px;
+}
+
+/* ================== Hero section ================== */
+
+/* ================== Skill section ================== */
+
+.Skill-Section {
+    padding-top: 60px;
+    margin-top: 60px;
+}
+
+.Skill_Title h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.allskillicon a {
+    width: 45px;
+    display: inline-block;
+}
+
+.allskillicon a img {
+    width: 100%;
+}
+
+.allskillicon span:first-child {
+    height: 100px;
+    width: 100px;
+    background-color: var(--container-color);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allskillicon h4 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-family: var(--title-font);
+    font-size: 20px;
+}
+
+.Skill_Title {
+    margin-bottom: 10px;
+}
+
+.Skill h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.allskillicon span:last-child {
+    font-size: 14px;
+}
+
+.allskillicon:hover img {
+    animation: bounce-skills 0.6s;
+}
+
+@keyframes bounce-skills {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-6px);
+    }
+
+    40% {
+        transform: translate(0);
+    }
+
+    60% {
+        transform: translate(-3px);
+    }
+
+    80% {
+        transform: translate(0);
+    }
+}
+
+/* ================== Skill section ================== */
+
+/* ================== Qualification section ==================  */
+
+.Educationcardinner {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 70px;
+}
+
+.Educationcardimg {
+    height: 100%;
+}
+
+.Educationcardimg img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.Educationcardtext h3 {
+    color: #012970;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.Educationcardtext h4 {
+    color: rgb(34, 109, 0);
+    margin: 0;
+    font-size: 20px;
+}
+
+.Educationcardtext p {
+    color: #111;
+}
+
+/* ================== Qualification section ==================  */
+
+/* ================== Service section ==================  */
+
+.servicecardinner {
+    transition: all ease-in-out 0.3s;
+    padding: 56px 16px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: relative;
+    text-align: center;
+    border-radius: 116px;
+    width: 230px;
+    height: 330px;
+    border: 4px solid #47aeff;
+}
+
+.servicecardinner:hover {
+    background: var(--gradient-color);
+    border: 4px solid white;
+}
+
+.servicecardinner i {
+    background: #47aeff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin: 0 auto;
+    font-size: 23px;
+    color: black;
+    overflow: hidden;
+    transition: transform 0.8s;
+}
+
+.servicecardinner:hover i {
+    background-color: white;
+    border: 2px solid black;
+    transform: rotateY(360deg);
+}
+
+.servicecardinner h4 {
+    margin: 15px 0px;
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    color: #111;
+}
+
+.servicecardinner p {
+    color: #111;
+}
+
+/* ================== Service section ==================  */
+
+/* ================== Project section ==================  */
+#Projectslider {
+    position: relative;
+}
+
+#Projectslider .owl-carousel .item img {
+    border-radius: 12px;
+    width: 300px !important;
+    margin: 0 auto;
+    transition: ease-in-out 0.3s;
+}
+
+#Projectslider .owl-nav .owl-prev {
+    position: absolute;
+    left: -45px;
+    top: 25%;
+    width: 35px;
+    height: 30px;
+    border-radius: 5px;
+    display: none;
+}
+
+#Projectslider .owl-nav .owl-next {
+    position: absolute;
+    right: -45px;
+    top: 25%;
+    width: 35px;
+    height: 30px;
+    border-radius: 5px;
+    display: none;
+}
+
+#Projectslider .owl-nav .owl-prev:hover,
+#Projectslider .owl-nav .owl-next:hover {
+    background: none;
+    color: black;
+}
+
+#Projectslider .owl-nav .owl-prev span {
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    font-size: 45px;
+    position: absolute;
+    left: 3px;
+    top: -9px;
+}
+
+#Projectslider .owl-nav .owl-next span {
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    font-size: 45px;
+    position: absolute;
+    left: 3px;
+    top: -9px;
+}
+
+#Projectslider .owl-carousel .item .itemcontent {
+    margin: 30px auto 0px;
+    width: 300px;
+}
+
+#Projectslider .owl-carousel .item .itemcontent h3 {
+    font-size: 23px;
+}
+
+#Projectslider .owl-carousel .item .itemcontent a {
+    margin: 0px;
+    color: var(--bs-heading-color);
+
+}
+
+#Projectslider .owl-carousel .item .itemcontent a i {
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+#Projectslider .owl-carousel .owl-item .item {
+    /* margin-right: 30px !important; */
+    overflow: hidden;
+}
+
+/* ================== Project section ==================  */
+
+/* ================== Testimonial section ================== */
+#Testimonialslider .owl-carousel .item {
+    text-align: center;
+}
+
+#Testimonialslider .owl-carousel .item p {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#Testimonialslider .owl-carousel .item p {
+    font-size: 16px;
+}
+
+#Testimonialslider .owl-theme .owl-dots {
+    display: none;
+}
+
+#Testimonialslider .owl-nav .owl-prev {
+    position: relative;
+    width: 35px;
+    height: 30px;
+    right: 25px;
+}
+
+#Testimonialslider .owl-nav .owl-next {
+    position: relative;
+    width: 35px;
+    height: 30px;
+    left: 25px;
+}
+
+#Testimonialslider .owl-nav .owl-prev span {
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    font-size: 45px;
+    position: absolute;
+    left: 3px;
+    top: -9px;
+}
+
+#Testimonialslider .owl-nav .owl-next span {
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    font-size: 45px;
+    position: absolute;
+    left: 3px;
+    top: -9px;
+}
+
+#Testimonialslider .owl-nav .owl-prev:hover,
+#Testimonialslider .owl-nav .owl-next:hover {
+    background: none;
+    color: black;
+}
+
+/* #Testimonialslider2 .owl-nav .owl-prev:hover,
+#Testimonialslider2 .owl-nav .owl-next:hover {
+    background: none;
+    color: white;
+} */
+
+/* ================== Testimonial section ================== */
+
+/* ==================  Login page ================== */
+
+.FullRegister {
+    background-color: #080710;
+    height: 100%;
+}
+
+.FullLogin {
+    background-color: #080710;
+    height: 100%;
+}
+
+.background .shape {
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child {
+    background: linear-gradient(#1845ad, #23a2f6);
+    left: -50px;
+    top: -50px;
+}
+
+.shape:last-child {
+    background: linear-gradient(to right, #ff512f, #f09819);
+    right: -50px;
+    bottom: -50px;
+}
+
+.Register_Form form {
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 10px 35px;
+}
+
+.Login_Form form {
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 10px 35px;
+}
+
+.Register_Form form {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.Login_Form form {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.Register_Form form h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    font-family: var(--body-font);
+}
+
+.Login_Form form h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    font-family: var(--body-font);
+}
+
+.Register_Form label {
+    display: block;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.Login_Form label {
+    display: block;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.Register_Form input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+}
+
+.Login_Form input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+}
+
+.Register_Form input::placeholder {
+    color: #e5e5e5;
+}
+
+.Login_Form input::placeholder {
+    color: #e5e5e5;
+}
+
+.Register_Form button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.Login_Form button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.Para_Login p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* ==================  Login page ================== */
+
+/* ================== Contact section ================== */
+
+.Contact-leftside .contactp {
+    font-family: var(--title-font);
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.Contact-leftside i {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.Whatsapp .whatsappnumber {
+    margin: 5px 0px;
+}
+
+.email {
+    margin: 35px 0px;
+}
+
+.email p a {
+    color: var(--text-color);
+}
+
+
+.email p {
+    font-family: var(--title-font);
+    font-weight: 500;
+}
+
+.contact-formlabelinput input,
+textarea {
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 100px;
+    border: 2px solid var(--text-color-light);
+    outline: none;
+    background-color: var(--body-color2);
+}
+
+.contact-formlabelinput2 input {
+    background-color: #111;
+    color: white;
+}
+
+.contact-formlabelinput2 textarea {
+    background-color: #111;
+    color: white;
+}
+
+.contact-formlabelinput textarea {
+    border-radius: 25px;
+    resize: none;
+}
+
+.contact-formlabelinput {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contact-formlabelinput label {
+    position: relative;
+    background-color: var(--body-color2);
+    color: var(--title-color);
+    z-index: 10;
+    left: 25px;
+    top: 8px;
+    padding: 0px 5.6px;
+}
+
+.contact-formlabelinput2 label {
+    background-color: #111;
+    color: white;
+}
+
+.Submitbutton button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-family: var(--title-font);
+    font-weight: 500;
+    display: inline-block;
+}
+
+.Submitbutton2 button {
+    color: white;
+}
+
+.Submitbutton button i {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* ================== Contact section ================== */
+
+.Footercontent p {
+    margin: 10px 0px 20px 0px;
+}
+
+.allFooterlink a {
+    color: black;
+    margin-right: 15px;
+}
+
+.allFooterlink2 a {
+    color: white;
+}
+
+.Sociallink a {
+    color: black;
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.Sociallink1 a {
+    color: white;
+}
+
+.lastp {
+    font-size: 15px;
+}
+
+.lastp i {
+    color: red;
+}
+
+.lastp a {
+    color: var(--text-color);
+}
+
+.lastp a:hover{
+    text-decoration: underline;
+}
